@@ -1,0 +1,57 @@
+{
+    "name": "php-io-extensions/typog",
+    "type": "php-ext",
+    "description": "OpenType and TrueType fonts read in C: a face's metrics, character map, advances, outlines and 'kern' pairs, text shaped one glyph a character, and a file's faces described for a catalog",
+    "keywords": [
+        "font",
+        "truetype",
+        "opentype",
+        "typography",
+        "php-ext"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Project Saturn Studios, LLC",
+            "email": "info@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.4"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Typog\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.11.x-dev"
+        }
+    },
+    "php-ext": {
+        "extension-name": "typog",
+        "priority": 30,
+        "support-zts": true,
+        "support-nts": true,
+        "os-families": [
+            "linux",
+            "darwin"
+        ],
+        "configure-options": [
+            {
+                "name": "enable-typog",
+                "description": "Enable the typog extension",
+                "needs-value": false
+            }
+        ]
+    }
+}
