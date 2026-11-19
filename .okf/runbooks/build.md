@@ -29,5 +29,5 @@ Linux (`install-debian-trixie.sh`): builds in place, installs `typog.so`, writes
 
 `config.m4` passes `-ffp-contract=off`: without it the compiler may fuse a composite glyph's `a * x + c * y` into one rounding, and its points differ in the last bit from the same arithmetic in PHP.
 
-[^mac]: Same script as ext-pixel-queue's, names changed.
-[^debian]: Same script as ext-pixel-queue's, names changed.
+[^mac]: Same script as ext-comrec's, names changed.
+[^debian]: Same script as ext-comrec's, names changed.
